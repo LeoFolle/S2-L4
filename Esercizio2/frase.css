@@ -1,0 +1,36 @@
+.box{
+    border: 4px;
+    border-style: solid;
+    margin: 1rem;
+}
+
+p {
+    font-family: "Bree Serif";
+    font-size: large;
+    padding: 1rem;
+}
+span {
+    color: rgb(86, 189, 207);
+    opacity: 0%;
+}
+
+span.parola1 {
+    animation: parole 21s infinite;
+    position: absolute;
+}
+span.parola2 {
+    animation: parole 21s infinite;
+    animation-delay: 7s;
+    position: absolute;
+}
+span.parola3 {
+    animation: parole 21s infinite;
+    position: absolute;
+    animation-delay: 14s;
+}
+@keyframes parole {
+    0%   {opacity: 0%; left: 200px; top: -50px;}
+    15%  {opacity: 100%; left: 255px; top: 72px;}
+    30%  {opacity: 100%; left: 255px; top: 72px;}
+    45% {opacity: 0%; left: 300px; top: 150px;}
+}
